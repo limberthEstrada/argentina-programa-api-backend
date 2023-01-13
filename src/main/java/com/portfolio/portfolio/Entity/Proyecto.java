@@ -41,6 +41,9 @@ public class Proyecto implements Serializable {
     @Column(name = "enlace_repo")
     private String enlaceRepo;
     @Size(max = 45)
+    @Column(name = "imagen")
+    private String imagen;
+    @Size(max = 45)
     @Column(name = "id_persona")
     private Integer id_persona;
     
@@ -82,6 +85,15 @@ public class Proyecto implements Serializable {
     public void setEnlaceRepo(String enlaceRepo) {
         this.enlaceRepo = enlaceRepo;
     }
+
+   public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
 
     public Integer getIdPersona() {
         return id_persona;

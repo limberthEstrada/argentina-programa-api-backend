@@ -34,6 +34,9 @@ public class Skill implements Serializable {
     @Size(max = 45)
     @Column(name = "nombre")
     private String nombre;
+    @Size(max = 45)
+    @Column(name = "img")
+    private String imagen;
 
     public Skill() {
     }
@@ -56,6 +59,14 @@ public class Skill implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
     @Override
