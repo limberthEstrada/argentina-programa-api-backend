@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
  * @author Limberth
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://portfolio-angular-74cfd.web.app/")
 public class RedSocialJpaController implements Serializable {
 
     private EntityManagerFactory emf = null;

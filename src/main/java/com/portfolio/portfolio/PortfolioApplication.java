@@ -19,7 +19,7 @@ public class PortfolioApplication {
         public CorsFilter corsFilter() {
             CorsConfiguration corsConfig = new CorsConfiguration();
             corsConfig.setAllowCredentials(Boolean.TRUE);
-            corsConfig.setAllowedOrigins(Arrays.asList("http://localhost:4200/"));
+            corsConfig.setAllowedOrigins(Arrays.asList("https://portfolio-angular-74cfd.web.app/"));
             corsConfig.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type", "Accept", "Authorization", "Origin, Accept",
                     "X-Requested-With", "Access-Control-Request-Method", "Acces-Control-Request-Headers"));
             corsConfig.setExposedHeaders(Arrays.asList("Origin", "Content-Type", "Accept", "Authorization", "Access-Control-Allow-Origin",
